@@ -22,7 +22,7 @@
     ],
     "require": {
         "php": "^8.3|^8.4",
-        "chiiya/passes": "^0.5",
+        "chiiya/passes": "^1.2",
         "illuminate/contracts": "^13.0",
         "spatie/laravel-package-tools": "^1.92"
     },
