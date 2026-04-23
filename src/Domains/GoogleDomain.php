@@ -166,11 +166,11 @@ class GoogleDomain
             $this->credentials = ServiceCredentials::parse(config('passes.google.credentials'));
         }
 
-        return new JWT([
-            'iss' => $this->credentials->client_email,
-            'key' => $this->credentials->private_key,
-            'origins' => config('passes.google.origins'),
-            'payload' => $payload,
-        ]);
+        return new JWT(
+            iss: $this->credentials->client_email,
+            key: $this->credentials->private_key,
+            origins: config('passes.google.origins'),
+            payload: $payload,
+        );
     }
 }
